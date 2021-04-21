@@ -44,7 +44,7 @@ test("gets player's health value", () => {
 });
 
 test("checks if the player is alive or not", () => {
-	const player = new Player();
+	const player = new Player("Dave");
 
 	expect(player.isAlive()).toBeTruthy();
 
@@ -54,7 +54,7 @@ test("checks if the player is alive or not", () => {
 });
 
 test("subtracts from player's health", () => {
-	const player = new Player();
+	const player = new Player("Dave");
 	const oldHealth = player.health;
 
 	player.reduceHealth(5);
